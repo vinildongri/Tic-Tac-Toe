@@ -1,0 +1,29 @@
+.cell {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.3em;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: transform 0.3s ease;
+    background-color: #71cff1;
+    cursor: pointer;
+}
+
+.cell:hover,
+.winner-cell:hover {
+    transform: scale(1.05);
+}
+
+.winner-cell {
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.3em;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: transform 0.3s ease;
+    background-color: antiquewhite;
+    border: 2px solid red;
+    cursor: pointer;
+}

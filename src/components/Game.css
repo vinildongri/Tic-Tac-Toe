@@ -1,0 +1,135 @@
+body {
+    background-color: rgb(197, 231, 223);
+    font-family: monospace;
+    padding: 0;
+    margin: 0;
+}
+
+.cell-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1vw;
+    height: 60%;
+    width: 60%;
+    font-size: 4vw;
+    margin: 1% auto auto auto;
+    padding: 1%;
+    border-radius: 0.5em;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #9cdbf1;
+}
+
+.game-turn {
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    border-radius: 0.5em;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-weight: bold;
+    background-color: antiquewhite;
+}
+
+.board {
+    margin-top: 2%;
+    height: 80vh;
+}
+
+.letter {
+    display: flex;
+    justify-content: space-around;
+    height: 10vh;
+    padding: 2vh 0;
+}
+
+.display-none {
+    display: none;
+}
+
+.display-initial {
+    display: initial;
+}
+
+.letter-dis {
+    width: 50%;
+    font-size: 2.5vw;
+    letter-spacing: 1vw;
+    border-radius: 0.5em;
+    background-color: #9cdbf1;
+}
+
+
+.letter-x,
+.letter-o {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
+    background-color: rgb(51, 224, 181);
+    border-radius: 0.5em;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: tranform 0.3s ease;
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+
+.letter-x:hover,
+.letter-o:hover {
+    transform: scale(1.05);
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    font-size: 4vw;
+    background-color: rgb(51, 224, 181);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-weight: bold;
+    border-radius: 0.25em;
+}
+
+
+.winner-banner {
+    margin-top: 2%;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.win-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5vw;
+    font-weight: bolder;
+    background-color: antiquewhite;
+    border-radius: 0.5em;
+    width: 70%;
+    margin: auto;
+    padding: 1%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.restart-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    font-weight: bold;
+    padding: 1%;
+    width: 50%;
+    margin: 1% auto auto auto;
+    background-color: rgb(51, 224, 181);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 0.5em;
+    transition: transform 0.3s ease;
+}
+
+.restart-btn:hover {
+    transform: scale(1.05);
+}
